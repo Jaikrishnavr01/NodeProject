@@ -17,9 +17,6 @@ const path = require('node:path')
 // console.log(path.isAbsolute(__filename))
 // console.log(path.isAbsolute('./add.js'))
 
-// console.log(path.isAbsolute(__filename))
-// console.log(path.isAbsolute('./add.js'))
-
 // console.log(path.join('form1','form2','index.js'))
 // console.log(path.join('/form1','form2','index.js'))
 // console.log(path.join('/form1','//form2','index.js'))
