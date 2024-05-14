@@ -6,6 +6,8 @@ const staff = require('./Router/Staffs')
 
 const app = express()
 
+// mongodb://localhost:27017/
+
 mongoose.connect('mongodb://127.0.0.1:27017/staff')
 
 mongoose.connection.on('connected',()=> {
@@ -15,7 +17,6 @@ mongoose.connection.on('connected',()=> {
  app.get('/', (req, res) => {
     res.send("Home Page")
  })
-
 
  app.use('/staff', staff )
 

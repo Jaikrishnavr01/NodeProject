@@ -10,4 +10,4 @@ shop1.on('order',(size, toppings) => {
 })
 
 shop1.displayOrder()
-shop1.order('large', 'cheese')
+shop1.order('small', 'cheese')

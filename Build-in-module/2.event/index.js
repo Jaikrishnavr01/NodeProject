@@ -10,8 +10,11 @@ events.on('order-pizza', (Size) => {
     if(Size === "large" ){
         console.log('free drink');
     }
+    else{
+        console.log('no free drink');
+    }
 })
 
-events.emit('order-pizza', 'large', 'cheese')
+events.emit('order-pizza', 'small', 'cheese')
 
 

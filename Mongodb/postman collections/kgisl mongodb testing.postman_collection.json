@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "eef15267-aaf1-40a5-b838-022106a3105b",
+		"name": "kgisl mongodb testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22712855",
+		"_collection_link": "https://gold-escape-88797.postman.co/workspace/Team-Workspace~d62d6485-834c-44bd-82fd-35455746a354/collection/22712855-eef15267-aaf1-40a5-b838-022106a3105b?action=share&source=collection_link&creator=22712855"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"name\" : \"jaikrish\",\r\n\"age\" : 20,\r\n\"salary\" : \"250000\",\r\n\"location\" : \"ddfdf0dsdsdsdsdsd1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mongodburl}}staff/post",
+					"host": [
+						"{{mongodburl}}staff"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{mongodburl}}staff/get",
+					"host": [
+						"{{mongodburl}}staff"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mongodburl}}staff/delete/:id",
+					"host": [
+						"{{mongodburl}}staff"
+					],
+					"path": [
+						"delete",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "66436e015497b9ea1b6d4e66"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mongodburl}}staff/get/:id",
+					"host": [
+						"{{mongodburl}}staff"
+					],
+					"path": [
+						"get",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "664370a65497b9ea1b6d4e682"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n       \"name\": \"gokul001133\",\r\n    \"age\": 2566,\r\n    \"salary\": 250\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mongodburl}}staff/update/:id",
+					"host": [
+						"{{mongodburl}}staff"
+					],
+					"path": [
+						"update",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
