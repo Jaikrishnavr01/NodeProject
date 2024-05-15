@@ -6,7 +6,7 @@ const staff = require('./Router/Staffs')
 
 const app = express()
 
-// mongodb://localhost:27017/
+// mongodb://localhost:27017/ (or) mongodb://127.0.0.1:27017/
 
 mongoose.connect('mongodb://127.0.0.1:27017/staff')
 

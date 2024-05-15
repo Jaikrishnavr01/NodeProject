@@ -2,13 +2,13 @@
 	"info": {
 		"_postman_id": "eef15267-aaf1-40a5-b838-022106a3105b",
 		"name": "kgisl mongodb testing",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "22712855",
 		"_collection_link": "https://gold-escape-88797.postman.co/workspace/Team-Workspace~d62d6485-834c-44bd-82fd-35455746a354/collection/22712855-eef15267-aaf1-40a5-b838-022106a3105b?action=share&source=collection_link&creator=22712855"
 	},
 	"item": [
 		{
-			"name": "post",
+			"name": "create new user",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -21,15 +21,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{mongodburl}}staff/post",
-					"host": [
-						"{{mongodburl}}staff"
-					],
-					"path": [
-						"post"
-					]
-				}
+				"url": "{{mongodburl}}staff/post"
 			},
 			"response": []
 		},
@@ -38,15 +30,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "{{mongodburl}}staff/get",
-					"host": [
-						"{{mongodburl}}staff"
-					],
-					"path": [
-						"get"
-					]
-				}
+				"url": "{{mongodburl}}staff/get"
 			},
 			"response": []
 		},
